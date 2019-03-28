@@ -24,17 +24,17 @@ final class SignalPlayer: NSObject {
     }
     
     func play() {
-        
         startTimer(forSignal: signalsQueue.first!)
     }
     
     private func startTimer(forSignal signal: Signal) {
-        
+        delegate?.playSignal(forMorseEncodedSignal: signalsQueue.first!)
+        // this stops either a off or an on signal after playbackRate seconds
         let playbackRate = signal.duration(forBasePlaybackRate: basePlaybackRate)
         Timer.scheduledTimer(timeInterval: playbackRate, target: self, selector: #selector(updateDelegate), userInfo: nil, repeats: false)
     }
     
-    @objc private func updateDelegate() {
+    @objc private func updateDelegate(timer: Timer) {
         
         if signalsQueue.count > 0 {
             delegate?.playSignal(forMorseEncodedSignal: signalsQueue.removeFirst())

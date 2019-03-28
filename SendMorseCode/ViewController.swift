@@ -31,55 +31,59 @@ class ViewController: MorsePlayerViewController {
     
     override func viewDidLoad() {
         delegate = self as? MorsePlayerViewControllerDelegateProtocol
-        let dotTime = basetime
-        let dashTime = basetime * 2.0
+        //let dotTime = basetime
+        //let dashTime = basetime * 2.0
         super.viewDidLoad()
+        //tone()
         // Do any additional setup after loading the view, typically from a nib.
-        let word : String = "this is a test"
+        let word : String = "is this"
         //MessageCleaner mc = MessageCleaner()
         let cleanedWord = MessageCleaner.clean(message: word)
-        let message = MessageEncoder.encode(message: cleanedWord)
-        for aword in message!.words {
-            for asymbol in aword.symbols {
-                for amark in asymbol.marks {
-                    switch amark {
-                    case .Dit:
-                        print("dit")
-                        tone(time: dotTime)
-                        Thread.sleep(forTimeInterval: dotTime)
+        let message = MessageEncoder.encode(message: cleanedWord)!
 
-                    case .Dah:
-                        print("dah")
-                        tone(time: dashTime)
-                        Thread.sleep(forTimeInterval: dotTime)
-
-                    }
-                }
-                print("letter space")
-                Thread.sleep(forTimeInterval: dotTime)
-            }
-            print("word space")
-            Thread.sleep(forTimeInterval: dashTime)
-        }
         //tone()
         //cwGen.stop()
-//        let mts = MorseTransmissionScheduler()
-//        mts.scheduleTransmission(cleanedMessage)
-    
+        let messageSignal = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)
+       //playSignal(forMorseEncodedSignal: messageSignal)   //forMorseEncodedSignal morseEncodedSignal: Signal)
+        let player = SignalPlayer(signals: messageSignal, delegate: self)
+        player.play()
+
     }
     
-    func tone(time: Double) {
+    func tone() {
             cwGen.enableSpeaker()
-            cwGen.setToneTime(t: time)
-            //played the standard tone for 10 seconds. Calling
+            cwGen.setToneTime(t: 10)
+            //played the standard tone for 1 seconds. Calling
             //
-            cwGen.startToneForDuration(time: time)
-//            guard let message = "test" else {
-//                showErrorLabel()
-//                return
-//            }
+            cwGen.startToneForDuration(time: 10)
     }
 
-
+    // MARK: - MorseCodePlayerDelegateProtocol Methods
+    
+    
+    override func playSignal(forMorseEncodedSignal morseEncodedSignal: Signal) {
+        
+        switch morseEncodedSignal {
+        case .On:
+            tone()
+            //audioPlayer.play()
+            //signalImage.alpha = 1.0
+        case .Off:
+            cwGen.stop()
+//            audioPlayer.pause()
+//            audioPlayer.currentTime = 0.0
+//            signalImage.alpha = 0.7
+        }
+    }
+    
+    override func playerFinished() {
+        cwGen.stop()
+//        UIView.animate(withDuration: 0.4, animations: {
+//            self.signalImage.alpha = 0
+//        }) { _ in
+//            self.audioPlayer.stop()
+//            self.delegate?.closeModal()
+//        }
+    }
 }
 
