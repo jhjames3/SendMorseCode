@@ -112,6 +112,10 @@ class ViewController: MorsePlayerViewController {
                 moveRandomWord()
                 moveRandomWord()
                 moveRandomWord()
+                moveRandomWord()
+                moveRandomWord()
+                moveRandomWord()
+                moveRandomWord()
                 setWord()
                 
             } catch {
