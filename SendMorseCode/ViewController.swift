@@ -46,7 +46,7 @@ class ViewController: MorsePlayerViewController {
         //            English (South Africa) - en-ZA
         //            English (United Kingdom) - en-GB
         //            English (United States) - en-US
-        utterance.voice = AVSpeechSynthesisVoice(language:  "en-GB")        //"fr-CA")       //"en-US")      //"en-GB")
+        utterance.voice = AVSpeechSynthesisVoice(language:  "en-US")        //"fr-CA")       //"en-US")      //"en-GB")
         utterance.rate = 0.4
         syn.speak(utterance)
         //self.sendWord(word: word)
@@ -132,7 +132,8 @@ class ViewController: MorsePlayerViewController {
         
         let messageSignal = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)
         //playSignal(forMorseEncodedSignal: messageSignal)   //forMorseEncodedSignal morseEncodedSignal: Signal)
-        let player = SignalPlayer(signals: messageSignal, delegate: self, wpm: 20)
+        let currentwpm = Double(wpm.text!)!
+        let player = SignalPlayer(signals: messageSignal, delegate: self, _wpm: currentwpm)
         player.play()
     }
     

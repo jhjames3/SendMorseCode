@@ -17,10 +17,18 @@ final class SignalPlayer: NSObject {
     var basePlaybackRate = 0.092  // 15wpm  0.092 //=13 wpm
     weak var delegate:MorseCodePlayerDelegateProtocol?
     
-    init(signals: [Signal], delegate: MorseCodePlayerDelegateProtocol, wpm: Double) {
-        self.basePlaybackRate = 1.2 / wpm
+    init(signals: [Signal], delegate: MorseCodePlayerDelegateProtocol, _wpm: Double) {
+        self.wpm = _wpm
+        self.basePlaybackRate = 1.2 / self.wpm
         self.delegate = delegate
         signalsQueue = signals
+        
+    }
+    
+    public func setWpm(wpm: Double) {
+        self.wpm = wpm
+        self.basePlaybackRate = 1.2 / self.wpm
+
     }
     
     func play() {
