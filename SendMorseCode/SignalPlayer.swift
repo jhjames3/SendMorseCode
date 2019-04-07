@@ -10,15 +10,15 @@ import Foundation
 
 /// Transmits a queue of Signals and plays them for the appropriate length of time
 final class SignalPlayer: NSObject {
-    
+    var wpm = 20.0
     var signalsQueue: [Signal]
     
     /// this is a standard base playback rate. A 'dot' should play for 92 ms.
-    var basePlaybackRate = 0.092
+    var basePlaybackRate = 0.092  // 15wpm  0.092 //=13 wpm
     weak var delegate:MorseCodePlayerDelegateProtocol?
     
-    init(signals: [Signal], delegate: MorseCodePlayerDelegateProtocol) {
-        
+    init(signals: [Signal], delegate: MorseCodePlayerDelegateProtocol, wpm: Double) {
+        self.basePlaybackRate = 1.2 / wpm
         self.delegate = delegate
         signalsQueue = signals
     }

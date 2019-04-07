@@ -28,7 +28,9 @@ final class MorseTransmissionScheduler {
                 signals.removeLast()
                 signals.append(Signal.Off(InterCharachterPauseDuration))
             }
-            signals.removeLast()
+            if (signals.count > 0) {
+                signals.removeLast()
+            }
             signals.append(Signal.Off(InterWordPauseDuration))
         }
         signals.removeLast()

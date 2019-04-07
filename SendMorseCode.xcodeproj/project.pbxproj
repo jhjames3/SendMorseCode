@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD229F1F22577CEF00346671 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD229F1E22577CEE00346671 /* test.txt */; };
 		CD26348322452788003EBD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26348222452788003EBD40 /* AppDelegate.swift */; };
 		CD26348522452788003EBD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26348422452788003EBD40 /* ViewController.swift */; };
 		CD26348822452788003EBD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD26348622452788003EBD40 /* Main.storyboard */; };
 		CD26348A22452789003EBD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD26348922452789003EBD40 /* Assets.xcassets */; };
 		CD26348D2245278A003EBD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD26348B2245278A003EBD40 /* LaunchScreen.storyboard */; };
+		CD4AADF1224F8C7C00ED0EE9 /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AADF0224F8C7C00ED0EE9 /* FileSystemManager.swift */; };
+		CD4AADF4224F8D7000ED0EE9 /* common1.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD4AADF3224F8D7000ED0EE9 /* common1.txt */; };
+		CD4AAE1E224FD16900ED0EE9 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AAE1D224FD16900ED0EE9 /* MorsePlayerViewController.swift */; };
 		CD8B29602248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B295F2248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift */; };
-		CD8B29622248EFB700E3B900 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B29612248EFB700E3B900 /* MorsePlayerViewController.swift */; };
 		CDD6CFAE2246E3D600DD016A /* ToneOutputUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFAD2246E3D600DD016A /* ToneOutputUnit.swift */; };
 		CDD6CFB22246EAC500DD016A /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFAF2246EAC500DD016A /* SignalPlayer.swift */; };
 		CDD6CFB42246EAC500DD016A /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFB12246EAC500DD016A /* MorseTransmissionScheduler.swift */; };
@@ -31,7 +34,18 @@
 		CDE2712B22452B1A002F8F21 /* MessageCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2712A22452B1A002F8F21 /* MessageCleaner.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CD4AAE1B224F9C5900ED0EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4AAE17224F9C5700ED0EE9 /* CW_words.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD4AADFE224F9C5500ED0EE9;
+			remoteInfo = CW_words;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CD229F1E22577CEE00346671 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		CD26347F22452788003EBD40 /* SendMorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26348222452788003EBD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD26348422452788003EBD40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +53,11 @@
 		CD26348922452789003EBD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD26348C2245278A003EBD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD26348E2245278A003EBD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4AADF0224F8C7C00ED0EE9 /* FileSystemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemManager.swift; sourceTree = "<group>"; };
+		CD4AADF3224F8D7000ED0EE9 /* common1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common1.txt; sourceTree = "<group>"; };
+		CD4AAE17224F9C5700ED0EE9 /* CW_words.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CW_words.xcodeproj; path = CW_words/CW_words.xcodeproj; sourceTree = "<group>"; };
+		CD4AAE1D224FD16900ED0EE9 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
 		CD8B295F2248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
-		CD8B29612248EFB700E3B900 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
 		CDD6CFAD2246E3D600DD016A /* ToneOutputUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToneOutputUnit.swift; path = /Users/jhj/Development/IOS_Course/SendMorseCode/SendMorseCode/ToneOutputUnit.swift; sourceTree = "<absolute>"; };
 		CDD6CFAF2246EAC500DD016A /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalPlayer.swift; sourceTree = "<group>"; };
 		CDD6CFB12246EAC500DD016A /* MorseTransmissionScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionScheduler.swift; sourceTree = "<group>"; };
@@ -72,6 +89,8 @@
 		CD26347622452788003EBD40 = {
 			isa = PBXGroup;
 			children = (
+				CD4AAE17224F9C5700ED0EE9 /* CW_words.xcodeproj */,
+				CD4AADF2224F8CC400ED0EE9 /* Data */,
 				CD26348122452788003EBD40 /* SendMorseCode */,
 				CD26348022452788003EBD40 /* Products */,
 			);
@@ -95,14 +114,32 @@
 				CDE27113224528A7002F8F21 /* Encoders */,
 				CDE2711222452897002F8F21 /* Model */,
 				CD26348222452788003EBD40 /* AppDelegate.swift */,
+				CD4AADF0224F8C7C00ED0EE9 /* FileSystemManager.swift */,
+				CD4AAE1D224FD16900ED0EE9 /* MorsePlayerViewController.swift */,
 				CD26348422452788003EBD40 /* ViewController.swift */,
-				CD8B29612248EFB700E3B900 /* MorsePlayerViewController.swift */,
 				CD26348622452788003EBD40 /* Main.storyboard */,
 				CD26348922452789003EBD40 /* Assets.xcassets */,
 				CD26348B2245278A003EBD40 /* LaunchScreen.storyboard */,
 				CD26348E2245278A003EBD40 /* Info.plist */,
 			);
 			path = SendMorseCode;
+			sourceTree = "<group>";
+		};
+		CD4AADF2224F8CC400ED0EE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CD229F1E22577CEE00346671 /* test.txt */,
+				CD4AADF3224F8D7000ED0EE9 /* common1.txt */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CD4AAE18224F9C5700ED0EE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4AAE1C224F9C5900ED0EE9 /* CW_words.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CDE2711222452897002F8F21 /* Model */ = {
@@ -177,6 +214,12 @@
 			mainGroup = CD26347622452788003EBD40;
 			productRefGroup = CD26348022452788003EBD40 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD4AAE18224F9C5700ED0EE9 /* Products */;
+					ProjectRef = CD4AAE17224F9C5700ED0EE9 /* CW_words.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CD26347E22452788003EBD40 /* SendMorseCode */,
@@ -184,14 +227,26 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CD4AAE1C224F9C5900ED0EE9 /* CW_words.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CW_words.app;
+			remoteRef = CD4AAE1B224F9C5900ED0EE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CD26347D22452788003EBD40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4AADF4224F8D7000ED0EE9 /* common1.txt in Resources */,
 				CDE2712322452AB5002F8F21 /* morse.json in Resources */,
 				CD26348D2245278A003EBD40 /* LaunchScreen.storyboard in Resources */,
 				CD26348A22452789003EBD40 /* Assets.xcassets in Resources */,
+				CD229F1F22577CEF00346671 /* test.txt in Resources */,
 				CD26348822452788003EBD40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,12 +270,13 @@
 				CDE2712B22452B1A002F8F21 /* MessageCleaner.swift in Sources */,
 				CDE2712022452AB5002F8F21 /* Mark.swift in Sources */,
 				CDE2712122452AB5002F8F21 /* MessageValidator.swift in Sources */,
-				CD8B29622248EFB700E3B900 /* MorsePlayerViewController.swift in Sources */,
 				CDE2711E22452AB5002F8F21 /* Message.swift in Sources */,
+				CD4AADF1224F8C7C00ED0EE9 /* FileSystemManager.swift in Sources */,
 				CD26348322452788003EBD40 /* AppDelegate.swift in Sources */,
 				CDE2711C22452AB5002F8F21 /* Symbol.swift in Sources */,
 				CDE2712722452AD5002F8F21 /* WordEncoder.swift in Sources */,
 				CDE2712222452AB5002F8F21 /* DataLoader.swift in Sources */,
+				CD4AAE1E224FD16900ED0EE9 /* MorsePlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

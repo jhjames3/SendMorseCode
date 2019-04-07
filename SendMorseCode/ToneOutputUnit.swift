@@ -37,7 +37,7 @@ final class ToneOutputUnit: NSObject {
     var sampleRate : Double = 44100.0    // typical audio sample rate
     
     var f0  =    880.0              // default frequency of tone:   'A' above Concert A
-    var v0  =  16383.0              // default volume of tone:      half full scale
+    var v0  =  32766.0              // default volume of tone:      half full scale
     
     var toneCount : Int32 = 0       // number of samples of tone to play.  0 for silence
     
@@ -83,6 +83,7 @@ final class ToneOutputUnit: NSObject {
                 let desiredSampleRate = sampleRate
                 try audioSession.setPreferredSampleRate(desiredSampleRate)
                 try audioSession.setPreferredIOBufferDuration(preferredIOBufferDuration)
+                //try audioSession.outputVolume = 1.0 
                 
                 NotificationCenter.default.addObserver(
                     forName: AVAudioSession.interruptionNotification,
