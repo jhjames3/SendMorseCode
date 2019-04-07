@@ -14,6 +14,10 @@ class ViewController: MorsePlayerViewController {
     @IBOutlet weak var wpm: UITextField!
     
     @IBOutlet weak var numWords: UITextField!
+    
+    
+    @IBOutlet weak var theWord: UITextField!
+    
     var contents = ""
     let cwGen = ToneOutputUnit()
     var myStrings = [String]()
@@ -27,6 +31,7 @@ class ViewController: MorsePlayerViewController {
 
     @IBAction func newWord(_ sender: Any) {
         setWord()
+        theWord.text = ""
     }
     
     
@@ -51,6 +56,7 @@ class ViewController: MorsePlayerViewController {
         syn.speak(utterance)
         //self.sendWord(word: word)
         print(word)
+        theWord.text = word
 
     }
     
@@ -117,6 +123,7 @@ class ViewController: MorsePlayerViewController {
                 moveRandomWord()
                 moveRandomWord()
                 setWord()
+            
                 
             } catch {
                 // contents could not be loaded
@@ -127,6 +134,11 @@ class ViewController: MorsePlayerViewController {
 
         
 
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>,
+                               with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func sendWord(word: String) {
@@ -176,6 +188,14 @@ class ViewController: MorsePlayerViewController {
     
     override func playerFinished() {
         cwGen.stop()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        //or
+        //self.view.endEditing(true)
+        return true
     }
 }
 
