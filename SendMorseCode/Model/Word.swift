@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import SwiftyJSON
 
+//class Word  {
+//    var symbols:[Symbol]
+//
+//    init(symbols:[Symbol]) {
+//        self.symbols = symbols
+//    }
+//
+//
+//
+//
+//
+//
+//}
 struct Word: Equatable {
-    
+
     let symbols: [Symbol]
 }
 

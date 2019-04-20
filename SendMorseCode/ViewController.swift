@@ -27,6 +27,7 @@ class ViewController: MorsePlayerViewController {
     let syn = AVSpeechSynthesizer()
     var wordsAlreadyHeard = Set<Int>()
     var wordsNotYetHeard = Set<Int>()
+    let wd = WordDecoder()
 
 
     @IBAction func newWord(_ sender: Any) {
@@ -123,6 +124,7 @@ class ViewController: MorsePlayerViewController {
                 moveRandomWord()
                 moveRandomWord()
                 setWord()
+                testDecode()
             
                 
             } catch {
@@ -141,11 +143,19 @@ class ViewController: MorsePlayerViewController {
         self.view.endEditing(true)
     }
     
+    func testDecode() {
+        let sd = SymbolDecoder()
+        let wd = WordDecoder()
+        let word = sd.loadJson(filename: "symbols")
+        let wordStr = wd.decodeWordOfSymbols(word: word!)
+    }
+    
     func sendWord(word: String) {
         //MessageCleaner mc = MessageCleaner()
         let cleanedWord = MessageCleaner.clean(message: word)
         let message = MessageEncoder.encode(message: cleanedWord)!
-        
+        //let word = message.words[0]; // debug testing
+        //let wordstr = wd.decodeWordOfSymbols(word: word)
         let messageSignal = MorseTransmissionScheduler.scheduleTransmission(fromMessage: message)
         //playSignal(forMorseEncodedSignal: messageSignal)   //forMorseEncodedSignal morseEncodedSignal: Signal)
         let currentwpm = Double(wpm.text!)!

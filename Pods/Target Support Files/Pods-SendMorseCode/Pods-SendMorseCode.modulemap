@@ -1,0 +1,6 @@
+framework module Pods_SendMorseCode {
+  umbrella header "Pods-SendMorseCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

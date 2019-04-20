@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/jhj/Development/IOS_Course/SendMorseCode/SendMorseCode/ToneOutputUnit.swift">
-   </FileRef>
-   <FileRef
       location = "self:SendMorseCode.xcodeproj">
    </FileRef>
 </Workspace>

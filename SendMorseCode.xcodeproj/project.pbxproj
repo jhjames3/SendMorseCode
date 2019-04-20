@@ -16,7 +16,11 @@
 		CD4AADF1224F8C7C00ED0EE9 /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AADF0224F8C7C00ED0EE9 /* FileSystemManager.swift */; };
 		CD4AADF4224F8D7000ED0EE9 /* common1.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD4AADF3224F8D7000ED0EE9 /* common1.txt */; };
 		CD4AAE1E224FD16900ED0EE9 /* MorsePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4AAE1D224FD16900ED0EE9 /* MorsePlayerViewController.swift */; };
+		CD6B4AB4226A0AF500A8B1BC /* symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = CD6B4AB3226A0AF500A8B1BC /* symbols.json */; };
+		CD6B4AB6226A0F5400A8B1BC /* SymbolDataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6B4AB5226A0F5400A8B1BC /* SymbolDataDecoder.swift */; };
 		CD8B29602248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8B295F2248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift */; };
+		CDBF99DF22624D41006D36C4 /* WordDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF99DE22624D41006D36C4 /* WordDecoder.swift */; };
+		CDBF99E122624EDF006D36C4 /* SymbolDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF99E022624EDF006D36C4 /* SymbolDecoder.swift */; };
 		CDD6CFAE2246E3D600DD016A /* ToneOutputUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFAD2246E3D600DD016A /* ToneOutputUnit.swift */; };
 		CDD6CFB22246EAC500DD016A /* SignalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFAF2246EAC500DD016A /* SignalPlayer.swift */; };
 		CDD6CFB42246EAC500DD016A /* MorseTransmissionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6CFB12246EAC500DD016A /* MorseTransmissionScheduler.swift */; };
@@ -32,6 +36,7 @@
 		CDE2712822452AD5002F8F21 /* MessageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2712522452AD5002F8F21 /* MessageEncoder.swift */; };
 		CDE2712922452AD5002F8F21 /* SymbolEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2712622452AD5002F8F21 /* SymbolEncoder.swift */; };
 		CDE2712B22452B1A002F8F21 /* MessageCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2712A22452B1A002F8F21 /* MessageCleaner.swift */; };
+		D26C7991D26AABDA5F251161 /* Pods_SendMorseCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A16F80EF1FC09CB8E1DAAF /* Pods_SendMorseCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8B0BBE4F51B70909F7859DF /* Pods-SendMorseCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMorseCode.release.xcconfig"; path = "Target Support Files/Pods-SendMorseCode/Pods-SendMorseCode.release.xcconfig"; sourceTree = "<group>"; };
+		C120CF3281789C6775ADE02C /* Pods-SendMorseCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendMorseCode.debug.xcconfig"; path = "Target Support Files/Pods-SendMorseCode/Pods-SendMorseCode.debug.xcconfig"; sourceTree = "<group>"; };
+		C3A16F80EF1FC09CB8E1DAAF /* Pods_SendMorseCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendMorseCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD229F1E22577CEE00346671 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		CD26347F22452788003EBD40 /* SendMorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26348222452788003EBD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +65,11 @@
 		CD4AADF3224F8D7000ED0EE9 /* common1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common1.txt; sourceTree = "<group>"; };
 		CD4AAE17224F9C5700ED0EE9 /* CW_words.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CW_words.xcodeproj; path = CW_words/CW_words.xcodeproj; sourceTree = "<group>"; };
 		CD4AAE1D224FD16900ED0EE9 /* MorsePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorsePlayerViewController.swift; sourceTree = "<group>"; };
+		CD6B4AB3226A0AF500A8B1BC /* symbols.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = symbols.json; sourceTree = "<group>"; };
+		CD6B4AB5226A0F5400A8B1BC /* SymbolDataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDataDecoder.swift; sourceTree = "<group>"; };
 		CD8B295F2248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseCodePlayerDelegateProtocol.swift; sourceTree = "<group>"; };
+		CDBF99DE22624D41006D36C4 /* WordDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDecoder.swift; sourceTree = "<group>"; };
+		CDBF99E022624EDF006D36C4 /* SymbolDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDecoder.swift; sourceTree = "<group>"; };
 		CDD6CFAD2246E3D600DD016A /* ToneOutputUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToneOutputUnit.swift; path = /Users/jhj/Development/IOS_Course/SendMorseCode/SendMorseCode/ToneOutputUnit.swift; sourceTree = "<absolute>"; };
 		CDD6CFAF2246EAC500DD016A /* SignalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalPlayer.swift; sourceTree = "<group>"; };
 		CDD6CFB12246EAC500DD016A /* MorseTransmissionScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTransmissionScheduler.swift; sourceTree = "<group>"; };
@@ -80,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D26C7991D26AABDA5F251161 /* Pods_SendMorseCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C96178E1FEE2AF8DA17502C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C120CF3281789C6775ADE02C /* Pods-SendMorseCode.debug.xcconfig */,
+				B8B0BBE4F51B70909F7859DF /* Pods-SendMorseCode.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD26347622452788003EBD40 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +116,8 @@
 				CD4AADF2224F8CC400ED0EE9 /* Data */,
 				CD26348122452788003EBD40 /* SendMorseCode */,
 				CD26348022452788003EBD40 /* Products */,
+				C96178E1FEE2AF8DA17502C9 /* Pods */,
+				E44EEB867CCE9F6B8A5B78AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +132,7 @@
 		CD26348122452788003EBD40 /* SendMorseCode */ = {
 			isa = PBXGroup;
 			children = (
+				CDBF99DD22624D0B006D36C4 /* Decoders */,
 				CDD6CFB12246EAC500DD016A /* MorseTransmissionScheduler.swift */,
 				CD8B295F2248EEB100E3B900 /* MorseCodePlayerDelegateProtocol.swift */,
 				CDD6CFAF2246EAC500DD016A /* SignalPlayer.swift */,
@@ -128,6 +154,7 @@
 		CD4AADF2224F8CC400ED0EE9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CD6B4AB3226A0AF500A8B1BC /* symbols.json */,
 				CD229F1E22577CEE00346671 /* test.txt */,
 				CD4AADF3224F8D7000ED0EE9 /* common1.txt */,
 			);
@@ -142,10 +169,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CDBF99DD22624D0B006D36C4 /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF99DE22624D41006D36C4 /* WordDecoder.swift */,
+				CDBF99E022624EDF006D36C4 /* SymbolDecoder.swift */,
+			);
+			path = Decoders;
+			sourceTree = "<group>";
+		};
 		CDE2711222452897002F8F21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CDE2711A22452AB5002F8F21 /* DataLoader.swift */,
+				CD6B4AB5226A0F5400A8B1BC /* SymbolDataDecoder.swift */,
 				CDE2711822452AB5002F8F21 /* Mark.swift */,
 				CDE2711622452AB5002F8F21 /* Message.swift */,
 				CDE2711922452AB5002F8F21 /* MessageValidator.swift */,
@@ -168,6 +205,14 @@
 			path = Encoders;
 			sourceTree = "<group>";
 		};
+		E44EEB867CCE9F6B8A5B78AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3A16F80EF1FC09CB8E1DAAF /* Pods_SendMorseCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD2634912245278A003EBD40 /* Build configuration list for PBXNativeTarget "SendMorseCode" */;
 			buildPhases = (
+				8A383D55D028527453C19C9B /* [CP] Check Pods Manifest.lock */,
 				CD26347B22452788003EBD40 /* Sources */,
 				CD26347C22452788003EBD40 /* Frameworks */,
 				CD26347D22452788003EBD40 /* Resources */,
+				204FCDA4BF6D72F9D08CD05A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +291,7 @@
 			files = (
 				CD4AADF4224F8D7000ED0EE9 /* common1.txt in Resources */,
 				CDE2712322452AB5002F8F21 /* morse.json in Resources */,
+				CD6B4AB4226A0AF500A8B1BC /* symbols.json in Resources */,
 				CD26348D2245278A003EBD40 /* LaunchScreen.storyboard in Resources */,
 				CD26348A22452789003EBD40 /* Assets.xcassets in Resources */,
 				CD229F1F22577CEF00346671 /* test.txt in Resources */,
@@ -253,12 +301,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		204FCDA4BF6D72F9D08CD05A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendMorseCode/Pods-SendMorseCode-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendMorseCode/Pods-SendMorseCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A383D55D028527453C19C9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendMorseCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD26347B22452788003EBD40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDE2712922452AD5002F8F21 /* SymbolEncoder.swift in Sources */,
+				CDBF99E122624EDF006D36C4 /* SymbolDecoder.swift in Sources */,
 				CD26348522452788003EBD40 /* ViewController.swift in Sources */,
 				CDE2711F22452AB5002F8F21 /* Signal.swift in Sources */,
 				CDE2711D22452AB5002F8F21 /* Word.swift in Sources */,
@@ -267,7 +365,9 @@
 				CDD6CFB42246EAC500DD016A /* MorseTransmissionScheduler.swift in Sources */,
 				CDD6CFAE2246E3D600DD016A /* ToneOutputUnit.swift in Sources */,
 				CDE2712822452AD5002F8F21 /* MessageEncoder.swift in Sources */,
+				CD6B4AB6226A0F5400A8B1BC /* SymbolDataDecoder.swift in Sources */,
 				CDE2712B22452B1A002F8F21 /* MessageCleaner.swift in Sources */,
+				CDBF99DF22624D41006D36C4 /* WordDecoder.swift in Sources */,
 				CDE2712022452AB5002F8F21 /* Mark.swift in Sources */,
 				CDE2712122452AB5002F8F21 /* MessageValidator.swift in Sources */,
 				CDE2711E22452AB5002F8F21 /* Message.swift in Sources */,
@@ -420,6 +520,7 @@
 		};
 		CD2634922245278A003EBD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C120CF3281789C6775ADE02C /* Pods-SendMorseCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +541,7 @@
 		};
 		CD2634932245278A003EBD40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B0BBE4F51B70909F7859DF /* Pods-SendMorseCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

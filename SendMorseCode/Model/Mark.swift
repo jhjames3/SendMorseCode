@@ -15,3 +15,9 @@ enum Mark {
     case Dit
     case Dah
 }
+
+enum CodingKeys: String, CodingKey
+{
+    case Dit
+    case Dah
+}

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class SymbolEncoder {
     
@@ -40,5 +41,23 @@ class SymbolEncoder {
         default:
             return nil
         }
+    }
+    
+    public func createMarkFromString(str: JSON) -> Mark? {
+        if str.stringValue == "Dit" {
+            return Mark.Dit
+        } else if str.string == "Dah" {
+            return Mark.Dah
+        } else {
+            return nil
+        }
+//        switch str {
+//        case .Dit:
+//            return Mark.Dit
+//        case .Dah:
+//            return Mark.Dah
+//        default:
+//            return nil
+//        }
     }
 }
